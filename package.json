@@ -4,7 +4,7 @@
   "description": "Projeto individual do sistema de gerenciamento de biblioteca do curso Vem ser tech Ifood/Ada. ",
   "main": "index.js",
   "scripts": {
-    "start": "tsc && node ./dist/Biblioteca/index.js"
+    "start": "tsc && node ./dist/index.js"
   },
   "keywords": [],
   "author": "Álvaro Soares Roberti",
@@ -12,5 +12,8 @@
   "devDependencies": {
     "@types/node": "20.9.2",
     "typescript": "5.2.2"
+  },
+  "dependencies": {
+    "prompt-sync": "^4.2.0"
   }
 }

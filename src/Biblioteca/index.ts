@@ -32,10 +32,10 @@ adicionarLivro(quantidade : number, titulo : string, autor : string, anoPublicac
 }
 s
 
-removerLivro(id: number): void {
+removerLivro(id: string): void {
     const log = new Logger('livros.json')
     const lista = log.readLogs()
-    const index = lista.findIndex((item) => item.id === id)
+    const index = lista.findIndex((item) => item.id == id)
     if (index !== -1) {
     lista.splice(index, 1)
     log.writeLogs(lista)
@@ -78,14 +78,14 @@ removerUsuario(email : string): void {
     }
 }
 
-emprestarLivro (id : number, usuario : string): void  {
+emprestarLivro (id : string, usuario : string): void  {
         const logLivros = new Logger('livros.json')
         const livros = logLivros.readLogs();
-        const livro = livros.find((item) => item.id === id && item.Quantidade > 0 )
+        const livro = livros.find((item) => item.id == id && item.Quantidade > 0 )
         if (livro) {
             const emprestar = new Logger('emprestados.json')
             emprestar.logEmprestar(livro.Título, usuario)
-            const index = livros.findIndex((item) => item.id === id)
+            const index = livros.findIndex((item) => item.id == id)
             livro.Quantidade -= 1
             livros.splice(index, 1, livro)
             logLivros.writeLogs(livros);
@@ -94,14 +94,14 @@ emprestarLivro (id : number, usuario : string): void  {
         }
 }
 
-devolverLivro (id : number, emailUsuario : string): void  {
+devolverLivro (id : string, emailUsuario : string): void  {
     const logLivros = new Logger('livros.json')
     const livros = logLivros.readLogs();
-    const livro = livros.find((item) => item.id === id)
+    const livro = livros.find((item) => item.id == id)
     if (livro) {
         const devolver = new Logger('devolvidos.json')
         devolver.logEmprestar(livro.Título, emailUsuario)
-        const index = livros.findIndex((item) => item.id === id)
+        const index = livros.findIndex((item) => item.id == id)
         livro.Quantidade += 1
         livros.splice(index, 1, livro)
         logLivros.writeLogs(livros);
@@ -115,3 +115,5 @@ listarTodosLivros() {
 }
 
 }
+
+export { Biblioteca }
