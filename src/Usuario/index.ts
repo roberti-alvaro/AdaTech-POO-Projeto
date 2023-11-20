@@ -3,7 +3,11 @@ import { Livro } from "../Livro"
 class Usuario {
     nome : string
     email : string
-    livrosEmprestados : Livro[] = []
+
+    constructor (nome : string, email : string) {
+        this.nome = nome
+        this.email = email
+    }
 }
 
 export {Usuario}

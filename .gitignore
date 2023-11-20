@@ -1,3 +1,9 @@
 dist
 node_modules
 *-lock.json
+autores.json
+livros.json
+usuarios.json
+ids.json
+emprestados.json
+devolvidos.json

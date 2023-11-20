@@ -1,22 +1,31 @@
 [
   {
-    "index": {
-      "id": 1,
-      "Quantidade": 1,
-      "Título": "O livro 1",
-      "Autor": "Jose",
-      "anoPublicacao": 2017,
-      "Gênero": "Ficção"
-    }
+    "id": 1,
+    "Quantidade": 2,
+    "Título": "Livro 1",
+    "Autor": [
+      {
+        "Nome": "Alvaro",
+        "dtNasc": "12/09/1991",
+        "Nacionalidade": "Brasileiro"
+      }
+    ],
+    "anoPublicacao": 2020,
+    "Gênero": "Romance"
   },
   {
-    "index": {
-      "id": 2,
-      "Quantidade": 1,
-      "Título": "O livro 2",
-      "Autor": "Alvaro",
-      "anoPublicacao": 2023,
-      "Gênero": "Ação"
-    }
+    "id": 4,
+    "Quantidade": 3,
+    "Título": "Livro 1",
+    "Autor": [
+      {
+        "Nome": "Alvaro",
+        "dtNasc": "12/09/1991",
+        "Nacionalidade": "Brasileiro"
+      }
+    ],
+    "anoPublicacao": 2020,
+    "Gênero": "Romance",
+    "quantidade": -2
   }
 ]

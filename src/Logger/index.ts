@@ -2,6 +2,7 @@ import * as fs from 'fs';
 import { Livro } from '../Livro';
 import { Usuario } from '../Usuario';
 import { Autor } from '../Autor';
+import { IdGenerator } from '../Livro/IdGenerator';
 
 class Logger {
   logFile: string;
@@ -9,29 +10,16 @@ class Logger {
   constructor(logFile: string) {
     this.logFile = logFile;
   }
-
-  logEmprestar(livro: Livro, usuario : Usuario): void {
-    const logEntry = {
-      Data: new Date().toLocaleString(),
-      LivroEmprestado: livro.titulo,
-      Usuario: usuario.nome
-    };
-
-    const logs = this.readLogs();
-    logs.push(logEntry);
-
-    this.writeLogs(logs);
-  }
+    
 
   logLivros(livro: Livro): void {
     const logEntry = {
-      index : {
+      Título: livro.titulo,
       id : livro.id,
       Quantidade : livro.quantidade,
-      Título: livro.titulo,
-      Autor: livro.autor.nome,
+      Autor: livro.autor,
       anoPublicacao: livro.anoPublicacao,
-      Gênero : livro.genero}
+      Gênero : livro.genero
     };
 
     const logs = this.readLogs();
@@ -57,7 +45,6 @@ class Logger {
     const logEntry = {
       Nome : usuario.nome,
       email : usuario.email,
-      LivrosEmprestados : usuario.livrosEmprestados
     };
 
     const logs = this.readLogs();
@@ -65,6 +52,21 @@ class Logger {
 
     this.writeLogs(logs);
   }
+
+  logEmprestar(titulo : string, usuario : string) {
+    
+    const logEntry = {
+      Data: new Date().toLocaleString(),
+      Livro: titulo,
+      Usuario: usuario
+    };
+
+    const logs = this.readLogs();
+    logs.push(logEntry);
+    this.writeLogs(logs);
+
+  } 
+
 
   readLogs(): any[] {
     try {

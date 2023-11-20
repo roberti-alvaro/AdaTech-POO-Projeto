@@ -1,20 +1,22 @@
 import { Autor } from "../Autor"
+import { Logger } from "../Logger"
 import { IdGenerator } from "./IdGenerator"
 
 class Livro{
-    id : number = IdGenerator.getNextId()
+    id = IdGenerator.getInstance().getNextId()
     quantidade : number
     titulo : string
-    autor : Autor
+    autor : any
     anoPublicacao : number
     genero : string
 
-    constructor (quantidade : number, titulo : string, autor : Autor , anoPublicacao : number, genero : string) {
+    constructor (quantidade : number, titulo : string, autor : any , anoPublicacao : number, genero : string) {
         this.quantidade = quantidade
         this.titulo = titulo
         this.autor = autor
         this.anoPublicacao = anoPublicacao
         this.genero = genero
+
     }
 
 }
