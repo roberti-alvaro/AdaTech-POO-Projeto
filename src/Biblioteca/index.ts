@@ -108,12 +108,6 @@ devolverLivro (id : string, emailUsuario : string): void  {
     }
 }
 
-listarTodosLivros() {
-    const logLivros = new Logger('livros.json')
-    const todosLivros = console.log(JSON.stringify(logLivros.readLogs()).split(',').join('\n'));
-    
-}
-
 }
 
 export { Biblioteca }
