@@ -1,19 +1,19 @@
 class IdGenerator {
-    private static instance: IdGenerator;
-    private static nextId: number = 1;
+    private static instance: IdGenerator
+    private static nextId: number = 1
   
     private constructor() {
     }
   
     static getInstance(): IdGenerator {
       if (!IdGenerator.instance) {
-        IdGenerator.instance = new IdGenerator();
+        IdGenerator.instance = new IdGenerator()
       }
-      return IdGenerator.instance;
+      return IdGenerator.instance
     }
   
     static getNextId(): number {
-      return this.nextId++;
+      return this.nextId++
     }
   }
 
