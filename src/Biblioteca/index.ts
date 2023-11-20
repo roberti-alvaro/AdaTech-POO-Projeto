@@ -115,30 +115,3 @@ listarTodosLivros() {
 }
 
 }
-// const José = new Autor("Jose", new Date(1992,12,1), "Estadunidense")
-// const novoLivro = new Livro(4, "O livro 1", José, 2017, "Ficção")
-// const Alvaro = new Autor("Alvaro", new Date(1991,9,12), "Brasileiro")
-// const novoLivro2 = new Livro(1, "O livro 2", Alvaro, 2023, "Ação")
-// const Maria = new Autor("Maria", new Date(1999,1,20), "Brasileiro")
-// const novoLivro3 = new Livro(5, "O livro 3", Maria, 2022, "Ação")
-// const Joao = new Autor("Joao", new Date(1990,8,25), "Brasileiro")
-// const novoLivro4 = new Livro(20, "O livro 4", Joao, 2010, "Aventura")
-
-const biblioteca = Biblioteca.getInstance()
-// biblioteca.adicionarAutor('Alvaro', '12/09/1991', 'Brasileiro')
-// biblioteca.adicionarAutor('Jose', '20/01/1987', 'Brasileiro')
-// biblioteca.removerAutor('Jose')
-// biblioteca.adicionarLivro(4, 'Livro 1', 'Alvaro', 2020, 'Romance')
-// biblioteca.adicionarUsuario('Mariazinha', 'mariazinha@gmail.com')
-biblioteca.listarTodosLivros()
-// biblioteca.removerLivro(2)
-// biblioteca.removerLivro(3)
-
-// biblioteca.removerAutor('Otavio')
-// addLivro.adicionarLivro(4, 'A casa de vidro', 'Otavio', 2023, 'sci-fi')
-// addLivro.adicionarLivro(novoLivro)
-// addLivro.adicionarLivro(novoLivro2)
-// addLivro.adicionarLivro(novoLivro3)
-// addLivro.adicionarLivro(novoLivro4)
-
-// addLivro.removerLivro(novoLivro2.id)
