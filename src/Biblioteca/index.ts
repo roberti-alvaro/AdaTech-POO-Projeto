@@ -5,9 +5,6 @@ import { Usuario } from "../Usuario";
 
 class Biblioteca {
 
-private livros: Livro[] = [];
-private autores: Autor[] = [];
-private usuarios: Usuario[] = [];
 
 adicionarLivro(livro : Livro): void {
 
@@ -16,12 +13,12 @@ adicionarLivro(livro : Livro): void {
 
 }
 
-removerLivro(livro: Livro): void {
+removerLivro(id: number): void {
     const log = new Logger('livros.json')
     const livros = log.readLogs()
-    const index = livros.indexOf(livro);
+    const index = livros.indexOf(id);
     if (index !== -1) {
-    this.livros.splice(index, 1)
+    livros.splice(index, 1)
     log.writeLogs(livros)
     }
 }
@@ -35,4 +32,4 @@ const addLivro = new Biblioteca()
 addLivro.adicionarLivro(novoLivro)
 addLivro.adicionarLivro(novoLivro2)
 
-const remover = addLivro.removerLivro(novoLivro)
+addLivro.removerLivro(novoLivro.id)

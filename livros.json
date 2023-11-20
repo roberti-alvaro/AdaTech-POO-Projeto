@@ -1,34 +1,22 @@
 [
   {
-    "Id": 1,
-    "Quantidade": 1,
-    "Título": "O livro 1",
-    "Autor": "Jose",
-    "anoPublicacao": 2017,
-    "Gênero": "Ficção"
+    "index": {
+      "id": 1,
+      "Quantidade": 1,
+      "Título": "O livro 1",
+      "Autor": "Jose",
+      "anoPublicacao": 2017,
+      "Gênero": "Ficção"
+    }
   },
   {
-    "Id": 2,
-    "Quantidade": 1,
-    "Título": "O livro 2",
-    "Autor": "Alvaro",
-    "anoPublicacao": 2023,
-    "Gênero": "Ação"
-  },
-  {
-    "Id": 1,
-    "Quantidade": 1,
-    "Título": "O livro 1",
-    "Autor": "Jose",
-    "anoPublicacao": 2017,
-    "Gênero": "Ficção"
-  },
-  {
-    "Id": 2,
-    "Quantidade": 1,
-    "Título": "O livro 2",
-    "Autor": "Alvaro",
-    "anoPublicacao": 2023,
-    "Gênero": "Ação"
+    "index": {
+      "id": 2,
+      "Quantidade": 1,
+      "Título": "O livro 2",
+      "Autor": "Alvaro",
+      "anoPublicacao": 2023,
+      "Gênero": "Ação"
+    }
   }
 ]

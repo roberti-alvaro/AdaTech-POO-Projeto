@@ -25,12 +25,13 @@ class Logger {
 
   logLivros(livro: Livro): void {
     const logEntry = {
-      Id : livro.id,
+      index : {
+      id : livro.id,
       Quantidade : livro.quantidade,
       Título: livro.titulo,
       Autor: livro.autor.nome,
       anoPublicacao: livro.anoPublicacao,
-      Gênero : livro.genero
+      Gênero : livro.genero}
     };
 
     const logs = this.readLogs();
