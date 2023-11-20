@@ -104,6 +104,9 @@ devolverLivro (id : string, emailUsuario : string): void  {
         livro.Quantidade += 1
         livros.splice(index, 1, livro)
         logLivros.writeLogs(livros);
+    } else {
+        console.log('Livro não encontrado, favor digitar id válido');
+        
     }
 }
 
