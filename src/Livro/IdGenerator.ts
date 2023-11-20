@@ -1,31 +1,3 @@
-import { Logger } from "../Logger"
-
-// class IdGenerator {
-  //   private static instance: IdGenerator
-  //   private static lasttId: number
-  //   private readonly filepath : string
-  
-  //   private constructor(filePath: string) {
-  //     this.filePath = filePath;
-  //     this.lastId = this.loadLastId();
-  //   }
-  
-  //   static getInstance(): IdGenerator {
-  //     if (!IdGenerator.instance) {
-  //       IdGenerator.instance = new IdGenerator()
-  //     }
-  //     return IdGenerator.instance
-  //   }
-  
-  //   static getNextId(): number {
-  //     const logs = new Logger('ids.json')
-  //     const idsLogLista = logs.readLogs()
-  //     let idAtual = Object.values(idsLogLista)[0]
-  //     this.nextId = idAtual++
-  //     logs.logIdLivro(this.nextId)
-  //     return this.nextId
-  //   }
-  // }
 import * as fs from 'fs';
 
 class IdGenerator {

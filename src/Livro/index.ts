@@ -1,5 +1,3 @@
-import { Autor } from "../Autor"
-import { Logger } from "../Logger"
 import { IdGenerator } from "./IdGenerator"
 
 class Livro{

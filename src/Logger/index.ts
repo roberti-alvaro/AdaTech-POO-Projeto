@@ -2,7 +2,6 @@ import * as fs from 'fs';
 import { Livro } from '../Livro';
 import { Usuario } from '../Usuario';
 import { Autor } from '../Autor';
-import { IdGenerator } from '../Livro/IdGenerator';
 
 class Logger {
   logFile: string;

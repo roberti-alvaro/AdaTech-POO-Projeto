@@ -1,4 +1,3 @@
-import { log } from "console";
 import { Autor } from "../Autor";
 import { Livro } from "../Livro";
 import { Logger } from "../Logger";
