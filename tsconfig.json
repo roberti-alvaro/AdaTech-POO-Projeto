@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+      "target": "ES6", //versão do javascript (ECMAScript) para compilar
+      "module": "CommonJS", //modulo de execução do projeto, pode ser no navegador etc. aqui usamos o commomjs.
+      "rootDir": "./src", //pasta raiz do projeto
+      "outDir": "./dist", //pasta onde serão criados os arquivos compilados javascript
+
+  },
+  "include": [
+      "./src/**/*.ts" //código que indica que todos arquivos .ts do projeto deverão ser compilados
+  ],
+  "exclude": [
+      "./dist" //aqui indicamos que a pasta dist não será compilada, pois na pasta dist já estão os arquivos js compilados
+  ]
+}
